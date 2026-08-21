@@ -16,9 +16,6 @@ MediQueue is a full-stack healthcare appointment and queue management platform d
 
 ---
 
-## 📸 Screenshots
-
-Add your screenshots in the sections below.
 
 
 
