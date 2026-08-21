@@ -8,7 +8,7 @@ MediQueue is a full-stack healthcare appointment and queue management platform d
 
 ## 🌐 Live Demo
 
-**Frontend:** https://medi-queue-livid.vercel.app
+**Webiste Link:** https://medi-queue-livid.vercel.app
 
 
 
