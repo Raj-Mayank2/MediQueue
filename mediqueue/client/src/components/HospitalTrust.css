@@ -1,0 +1,189 @@
+.hospital-trust {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.trust-container {
+  width: min(100% - 48px, 1100px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.trust-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.trust-header h2 {
+  margin-top: 8px;
+
+  color: #0f172a;
+
+  font-size: 38px;
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.trust-header h2 span {
+  color: #2563eb;
+}
+
+.trust-header > p {
+  max-width: 390px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.trust-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 55px;
+
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.trust-stat {
+  padding: 28px 25px;
+
+  border-right: 1px solid #e2e8f0;
+}
+
+.trust-stat:first-child {
+  padding-left: 0;
+}
+
+.trust-stat:last-child {
+  border-right: none;
+}
+
+.trust-stat strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 30px;
+
+  letter-spacing: -1px;
+}
+
+.trust-stat span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.trust-features {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+.trust-feature {
+  display: flex;
+
+  gap: 15px;
+}
+
+.feature-number {
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 0.5px;
+}
+
+.trust-feature h3 {
+  color: #0f172a;
+
+  font-size: 14px;
+}
+
+.trust-feature p {
+  margin-top: 6px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .hospital-trust {
+    padding: 70px 0;
+  }
+
+  .trust-container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .trust-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trust-header h2 {
+    font-size: 30px;
+  }
+
+  .trust-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-stat {
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .trust-stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .trust-stat:nth-child(3),
+  .trust-stat:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .trust-features {
+    grid-template-columns: 1fr;
+  }
+}

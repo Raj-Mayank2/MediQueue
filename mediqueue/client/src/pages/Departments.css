@@ -1,0 +1,412 @@
+/* =========================================
+   DEPARTMENTS PAGE
+========================================= */
+
+.departments-page {
+  min-height: calc(100vh - 70px);
+  padding: 75px 20px 90px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f4fbfb 0%,
+      #ffffff 55%,
+      #f5faf9 100%
+    );
+
+  color: #24363e;
+}
+
+
+.departments-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.departments-header {
+  max-width: 720px;
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.departments-header > span {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #147d81;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+
+.departments-header h1 {
+  margin: 0;
+
+  color: #203740;
+
+  font-size: clamp(
+    38px,
+    5vw,
+    54px
+  );
+
+  line-height: 1.1;
+
+  letter-spacing: -1.8px;
+}
+
+
+.departments-header p {
+  max-width: 600px;
+
+  margin: 18px auto 0;
+
+  color: #71838a;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   DEPARTMENT GRID
+========================================= */
+
+.departments-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   DEPARTMENT CARD
+========================================= */
+
+.department-card {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 190px;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfeaec;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 25px rgba(
+      30,
+      60,
+      68,
+      0.045
+    );
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.department-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 85px;
+  height: 85px;
+
+  top: -40px;
+  right: -35px;
+
+  border-radius: 50%;
+
+  background: #e8f6f6;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.department-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 4px;
+  height: 45px;
+
+  top: 28px;
+  left: 0;
+
+  border-radius:
+    0 5px 5px 0;
+
+  background: #147d81;
+}
+
+
+.department-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #c5dfe1;
+
+  box-shadow:
+    0 16px 35px rgba(
+      30,
+      60,
+      68,
+      0.09
+    );
+}
+
+
+.department-card:hover::before {
+  transform: scale(1.25);
+}
+
+
+/* =========================================
+   CARD ICON
+========================================= */
+
+.department-card::marker {
+  display: none;
+}
+
+
+.department-card h2 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 8px 0 0;
+
+  color: #30464e;
+
+  font-size: 19px;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.2px;
+}
+
+
+.department-card p {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 12px 0 0;
+
+  color: #7b8c92;
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.departments-empty {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  padding: 65px 30px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px dashed #cbdcde;
+
+  border-radius: 15px;
+}
+
+
+.departments-empty h2 {
+  margin: 0;
+
+  color: #344b54;
+
+  font-size: 20px;
+}
+
+
+.departments-empty p {
+  margin: 9px 0 0;
+
+  color: #8b9a9f;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   LOADING STATE
+========================================= */
+
+.departments-page
+.departments-container
+> p {
+  padding: 80px 20px;
+
+  text-align: center;
+
+  color: #71838a;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   CARD NUMBER / VISUAL DETAIL
+========================================= */
+
+.department-card {
+  counter-increment: department-card;
+}
+
+
+.department-card h2::before {
+  content: "MEDIQUEUE";
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #9bb5b8;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .departments-page {
+    padding-top: 60px;
+  }
+
+
+  .departments-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .departments-page {
+    min-height: calc(100vh - 65px);
+
+    padding:
+      50px 15px
+      70px;
+  }
+
+
+  .departments-header {
+    margin-bottom: 38px;
+  }
+
+
+  .departments-header h1 {
+    font-size: 38px;
+
+    letter-spacing: -1.2px;
+  }
+
+
+  .departments-header p {
+    font-size: 13px;
+  }
+
+
+  .departments-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+
+  .department-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+
+  .department-card h2 {
+    font-size: 18px;
+  }
+
+
+  .department-card p {
+    font-size: 12px;
+  }
+
+
+  .departments-empty {
+    padding:
+      50px 20px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .departments-header h1 {
+    font-size: 34px;
+  }
+
+
+  .department-card {
+    padding: 22px;
+  }
+
+}

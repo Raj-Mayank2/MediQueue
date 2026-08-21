@@ -1,0 +1,962 @@
+/* =========================================
+   DOCTOR DETAILS PAGE
+========================================= */
+
+.doctor-details-page {
+  min-height: 100vh;
+
+  padding: 45px 0 100px;
+
+  background: #f8fafc;
+}
+
+.doctor-details-container {
+  width: min(100% - 48px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.doctor-breadcrumb {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+
+  color: #94a3b8;
+
+  font-size: 8px;
+}
+
+.doctor-breadcrumb a {
+  color: #64748b;
+
+  text-decoration: none;
+}
+
+.doctor-breadcrumb a:hover {
+  color: #2563eb;
+}
+
+.doctor-breadcrumb strong {
+  color: #475569;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.doctor-profile {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+}
+
+.doctor-profile-main {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+}
+
+.doctor-profile-avatar {
+  width: 115px;
+  height: 115px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #2563eb;
+
+  background:
+    linear-gradient(
+      145deg,
+      #dbeafe,
+      #eff6ff
+    );
+
+  border-radius: 22px;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.doctor-profile-info {
+  min-width: 0;
+}
+
+.doctor-profile-department {
+  display: inline-block;
+
+  color: #2563eb;
+
+  font-size: 8px;
+
+  font-weight: 750;
+
+  letter-spacing: 0.8px;
+}
+
+.doctor-profile-info h1 {
+  margin-top: 7px;
+
+  color: #0f172a;
+
+  font-size: 32px;
+
+  line-height: 1.1;
+
+  letter-spacing: -1.5px;
+}
+
+.doctor-profile-specialty {
+  margin-top: 6px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+
+  font-weight: 650;
+}
+
+.doctor-qualification {
+  margin-top: 6px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   PROFILE STATS
+========================================= */
+
+.doctor-profile-stats {
+  display: flex;
+
+  gap: 25px;
+
+  margin-top: 18px;
+}
+
+.doctor-profile-stats > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-profile-stats strong {
+  color: #0f172a;
+
+  font-size: 12px;
+}
+
+.doctor-profile-stats span {
+  margin-top: 3px;
+
+  color: #94a3b8;
+
+  font-size: 7px;
+}
+
+
+/* =========================================
+   BOOK BOX
+========================================= */
+
+.profile-book-box {
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 22px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+}
+
+.profile-book-box > span {
+  color: #94a3b8;
+
+  font-size: 7px;
+
+  font-weight: 750;
+
+  letter-spacing: 0.8px;
+}
+
+.profile-book-box > strong {
+  margin-top: 5px;
+
+  color: #0f172a;
+
+  font-size: 26px;
+}
+
+.profile-book-box > small {
+  margin-top: 3px;
+
+  color: #94a3b8;
+
+  font-size: 7px;
+}
+
+.profile-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  padding: 11px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.profile-book-btn:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 7px 18px rgba(37, 99, 235, 0.18);
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.doctor-information {
+  display: grid;
+
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+.doctor-about {
+  padding-top: 5px;
+}
+
+.doctor-about h2 {
+  margin-top: 10px;
+
+  color: #0f172a;
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  letter-spacing: -1px;
+}
+
+.doctor-about h2 span {
+  color: #2563eb;
+}
+
+.doctor-about p {
+  max-width: 650px;
+
+  margin-top: 14px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   DETAILS LIST
+========================================= */
+
+.doctor-details-list {
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 17px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item span {
+  color: #94a3b8;
+
+  font-size: 7px;
+}
+
+.detail-item strong {
+  color: #475569;
+
+  font-size: 8px;
+
+  text-align: right;
+}
+
+.doctor-status-text {
+  color: #16a34a !important;
+}
+
+
+/* =========================================
+   WORKING SCHEDULE
+========================================= */
+
+.doctor-working-section {
+  margin-top: 60px;
+}
+
+.doctor-working-section
+  .availability-heading {
+  margin-bottom: 20px;
+}
+
+.working-schedule-card {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+
+  overflow: hidden;
+}
+
+.working-schedule-row {
+  min-height: 100px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 22px;
+
+  border-right: 1px solid #f1f5f9;
+}
+
+.working-schedule-row:last-child {
+  border-right: none;
+}
+
+.working-schedule-row span {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 7px;
+
+  font-weight: 750;
+
+  letter-spacing: 0.7px;
+}
+
+.working-schedule-row strong {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #334155;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   AVAILABILITY
+========================================= */
+
+.doctor-availability-section {
+  margin-top: 60px;
+}
+
+.availability-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.availability-heading h2 {
+  margin-top: 9px;
+
+  color: #0f172a;
+
+  font-size: 29px;
+
+  letter-spacing: -1px;
+}
+
+.availability-heading h2 span {
+  color: #2563eb;
+}
+
+.availability-heading > p {
+  max-width: 300px;
+
+  color: #94a3b8;
+
+  font-size: 8px;
+
+  line-height: 1.6;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   BOOKING LAYOUT
+========================================= */
+
+.booking-layout {
+  display: grid;
+
+  grid-template-columns: 0.7fr 1.3fr;
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.date-selection,
+.slot-selection {
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+}
+
+.date-selection h3,
+.slot-heading h3 {
+  color: #0f172a;
+
+  font-size: 11px;
+}
+
+.date-options {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.date-option {
+  min-height: 85px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 3px;
+
+  color: #64748b;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.date-option:hover {
+  border-color: #93c5fd;
+
+  background: #eff6ff;
+}
+
+.date-option span {
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.date-option strong {
+  color: #0f172a;
+
+  font-size: 20px;
+}
+
+.date-option small {
+  color: #94a3b8;
+
+  font-size: 7px;
+}
+
+.date-option.active {
+  color: white;
+
+  background: #2563eb;
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 8px 18px rgba(37, 99, 235, 0.18);
+}
+
+.date-option.active strong,
+.date-option.active small {
+  color: white;
+}
+
+
+/* =========================================
+   SLOT
+========================================= */
+
+.slot-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.slot-heading span {
+  color: #94a3b8;
+
+  font-size: 7px;
+}
+
+.slot-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.time-slot {
+  padding: 10px 8px;
+
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 8px;
+  font-weight: 650;
+
+  transition: 0.2s ease;
+}
+
+.time-slot:hover {
+  color: white;
+
+  background: #2563eb;
+
+  border-color: #2563eb;
+}
+
+.time-slot.selected {
+  color: white;
+
+  background: #2563eb;
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 5px 12px rgba(37, 99, 235, 0.18);
+}
+
+
+/* =========================================
+   EMPTY SLOT STATE
+========================================= */
+
+.slot-empty-state {
+  min-height: 180px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  margin-top: 15px;
+
+  background: #f8fafc;
+
+  border: 1px dashed #cbd5e1;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.slot-empty-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background: #dbeafe;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+}
+
+.slot-empty-state h4 {
+  margin-top: 10px;
+
+  color: #334155;
+
+  font-size: 10px;
+}
+
+.slot-empty-state p {
+  max-width: 270px;
+
+  margin-top: 5px;
+
+  color: #94a3b8;
+
+  font-size: 8px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   BOOKING BAR
+========================================= */
+
+.doctor-booking-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-top: 18px;
+
+  padding: 18px 20px;
+
+  background: #0f172a;
+
+  border-radius: 12px;
+}
+
+.doctor-booking-bar > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-booking-bar > div > span {
+  color: #94a3b8;
+
+  font-size: 7px;
+
+  font-weight: 750;
+
+  letter-spacing: 0.8px;
+}
+
+.doctor-booking-bar > div > strong {
+  margin-top: 5px;
+
+  color: white;
+
+  font-size: 10px;
+}
+
+.doctor-book-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: none;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.doctor-book-now:hover:not(.disabled) {
+  background: #3b82f6;
+
+  transform: translateY(-1px);
+}
+
+.doctor-book-now span {
+  font-size: 13px;
+}
+
+.doctor-book-now.disabled {
+  background: #334155;
+
+  cursor: not-allowed;
+
+  opacity: 0.7;
+}
+
+
+/* =========================================
+   NOT FOUND
+========================================= */
+
+.doctor-not-found {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: #f8fafc;
+
+  text-align: center;
+}
+
+.doctor-not-found h1 {
+  color: #0f172a;
+
+  font-size: 26px;
+}
+
+.doctor-not-found p {
+  margin-top: 8px;
+
+  color: #64748b;
+
+  font-size: 10px;
+}
+
+.doctor-not-found a {
+  display: inline-block;
+
+  margin-top: 18px;
+
+  color: #2563eb;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .doctor-profile {
+    flex-direction: column;
+  }
+
+  .profile-book-box {
+    width: 100%;
+  }
+
+  .doctor-information {
+    grid-template-columns: 1fr;
+  }
+
+  .working-schedule-card {
+    grid-template-columns: 1fr;
+  }
+
+  .working-schedule-row {
+    border-right: none;
+
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .working-schedule-row:last-child {
+    border-bottom: none;
+  }
+
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .doctor-details-page {
+    padding-top: 30px;
+  }
+
+  .doctor-details-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .doctor-profile {
+    padding: 20px;
+  }
+
+  .doctor-profile-main {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .doctor-profile-avatar {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 16px;
+
+    font-size: 21px;
+  }
+
+  .doctor-profile-info h1 {
+    font-size: 27px;
+  }
+
+  .doctor-profile-stats {
+    gap: 15px;
+  }
+
+  .doctor-information {
+    margin-top: 40px;
+  }
+
+  .doctor-about h2 {
+    font-size: 23px;
+  }
+
+  .availability-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .availability-heading > p {
+    text-align: left;
+  }
+
+  .slot-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .doctor-booking-bar {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .doctor-book-now {
+    width: 100%;
+  }
+
+}

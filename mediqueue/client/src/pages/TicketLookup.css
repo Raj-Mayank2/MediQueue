@@ -1,0 +1,341 @@
+.ticket-lookup-page {
+  min-height: 100vh;
+
+  padding: 80px 0;
+
+  background: #f8fafc;
+}
+
+
+.ticket-lookup-container {
+  width: min(
+    100% - 40px,
+    500px
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.ticket-lookup-header {
+  text-align: center;
+
+  margin-bottom: 28px;
+}
+
+
+.ticket-search-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 15px;
+
+  color: #2563eb;
+
+  background: #dbeafe;
+
+  border-radius: 50%;
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+
+.ticket-lookup-header h1 {
+  margin-top: 9px;
+
+  color: #0f172a;
+
+  font-size: 36px;
+
+  letter-spacing: -1.5px;
+}
+
+
+.ticket-lookup-header h1 span {
+  color: #2563eb;
+}
+
+
+.ticket-lookup-header p {
+  max-width: 390px;
+
+  margin: 10px auto 0;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.ticket-lookup-card {
+  padding: 25px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 35px
+    rgba(15, 23, 42, 0.05);
+}
+
+
+.ticket-lookup-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.ticket-lookup-card label {
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 8px;
+
+  font-weight: 750;
+}
+
+
+.ticket-lookup-card input {
+  width: 100%;
+
+  padding: 13px;
+
+  color: #0f172a;
+
+  background: #f8fafc;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 0.5px;
+}
+
+
+.ticket-lookup-card input:focus {
+  background: white;
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.08);
+}
+
+
+.ticket-lookup-card input::placeholder {
+  color: #cbd5e1;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.ticket-lookup-error {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 10px;
+
+  padding: 10px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 7px;
+}
+
+
+.ticket-lookup-error span {
+  width: 17px;
+  height: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #dc2626;
+
+  background: #fee2e2;
+
+  border-radius: 50%;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ticket-lookup-error p {
+  color: #b91c1c;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.ticket-lookup-card button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 15px;
+
+  padding: 13px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: none;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  font-weight: 750;
+}
+
+
+.ticket-lookup-card button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+
+.ticket-lookup-card button:disabled {
+  background: #94a3b8;
+
+  cursor: not-allowed;
+}
+
+
+.ticket-lookup-card button span {
+  font-size: 12px;
+}
+
+
+/* =========================================
+   HELP
+========================================= */
+
+.ticket-lookup-help {
+  margin-top: 20px;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+
+.ticket-lookup-help strong {
+  color: #334155;
+
+  font-size: 8px;
+}
+
+
+.ticket-lookup-help p {
+  margin-top: 5px;
+
+  color: #94a3b8;
+
+  font-size: 7px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.ticket-back-link {
+  display: block;
+
+  margin-top: 20px;
+
+  color: #64748b;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  text-decoration: none;
+}
+
+
+.ticket-back-link:hover {
+  color: #2563eb;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .ticket-lookup-page {
+    padding-top: 50px;
+  }
+
+
+  .ticket-lookup-header h1 {
+    font-size: 31px;
+  }
+
+
+  .ticket-lookup-card {
+    padding: 20px;
+  }
+
+}

@@ -1,0 +1,537 @@
+/* =========================================
+   DOCTORS PAGE
+========================================= */
+
+.doctors-page {
+  min-height: 100vh;
+
+  padding: 70px 0 100px;
+
+  background: #f8fafc;
+}
+
+.doctors-container {
+  width: min(100% - 48px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.doctors-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.doctors-header h1 {
+  margin-top: 10px;
+
+  color: #0f172a;
+
+  font-size: 46px;
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+}
+
+.doctors-header h1 span {
+  color: #2563eb;
+}
+
+.doctors-header p {
+  max-width: 580px;
+
+  margin-top: 14px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.section-label {
+  color: #2563eb;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   DOCTOR COUNT
+========================================= */
+
+.doctor-count {
+  min-width: 100px;
+
+  padding: 16px 20px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.doctor-count strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.doctor-count span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #94a3b8;
+
+  font-size: 8px;
+}
+
+
+/* =========================================
+   DOCTORS GRID
+========================================= */
+
+.doctors-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   DOCTOR CARD
+========================================= */
+
+.doctor-card {
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.doctor-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 22px 22px 0;
+}
+
+.doctor-avatar {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background: #dbeafe;
+
+  border-radius: 13px;
+
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.doctor-status {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #16a34a;
+
+  font-size: 8px;
+  font-weight: 650;
+}
+
+.doctor-status span {
+  width: 6px;
+  height: 6px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.doctor-card-content {
+  padding: 18px 22px 22px;
+}
+
+.doctor-department {
+  display: block;
+
+  color: #2563eb;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+.doctor-card h2 {
+  margin-top: 7px;
+
+  color: #0f172a;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.5px;
+}
+
+.doctor-specialty {
+  margin-top: 4px;
+
+  color: #2563eb;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.doctor-qualification {
+  margin-top: 5px;
+
+  color: #94a3b8;
+
+  font-size: 8px;
+}
+
+
+/* =========================================
+   CARD STATS
+========================================= */
+
+.doctor-card-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  margin-top: 20px;
+
+  border-top: 1px solid #f1f5f9;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.doctor-card-stats > div {
+  padding: 13px 8px;
+
+  border-right: 1px solid #f1f5f9;
+}
+
+.doctor-card-stats > div:last-child {
+  border-right: none;
+}
+
+.doctor-card-stats strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 11px;
+}
+
+.doctor-card-stats span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #94a3b8;
+
+  font-size: 7px;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.doctor-card-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 15px;
+}
+
+.view-doctor-btn {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #2563eb;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: gap 0.2s ease;
+}
+
+.view-doctor-btn span {
+  font-size: 13px;
+}
+
+.view-doctor-btn:hover {
+  gap: 10px;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.doctors-loading {
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #dbeafe;
+
+  border-top-color: #2563eb;
+
+  border-radius: 50%;
+
+  animation:
+    doctors-spin 0.8s linear infinite;
+}
+
+.doctors-loading p {
+  color: #64748b;
+
+  font-size: 10px;
+}
+
+@keyframes doctors-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.doctors-error {
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.error-symbol {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #dc2626;
+
+  background: #fef2f2;
+
+  border-radius: 50%;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.doctors-error h2 {
+  margin-top: 15px;
+
+  color: #0f172a;
+
+  font-size: 19px;
+}
+
+.doctors-error p {
+  margin-top: 6px;
+
+  color: #64748b;
+
+  font-size: 10px;
+}
+
+.doctors-error button {
+  margin-top: 18px;
+
+  padding: 10px 16px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: none;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.no-doctors {
+  padding: 90px 20px;
+
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .doctors-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .doctor-count {
+    align-self: flex-start;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .doctors-page {
+    padding-top: 45px;
+  }
+
+  .doctors-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .doctors-header h1 {
+    font-size: 36px;
+  }
+
+  .doctor-card-top {
+    padding: 18px 18px 0;
+  }
+
+  .doctor-card-content {
+    padding: 16px 18px 18px;
+  }
+
+  .doctor-card-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-card-stats > div {
+    border-right: none;
+
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .doctor-card-stats > div:last-child {
+    border-bottom: none;
+  }
+
+}

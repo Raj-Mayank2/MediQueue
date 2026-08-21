@@ -1,0 +1,326 @@
+.doctor-search-section {
+  position: relative;
+
+  padding: 100px 0;
+
+  background: #ffffff;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.doctor-search-container {
+  width: min(100% - 48px, 1100px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.search-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 32px;
+}
+
+.section-label {
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 1.2px;
+}
+
+.search-heading h2 {
+  max-width: 550px;
+
+  margin-top: 8px;
+
+  color: #0f172a;
+
+  font-size: 38px;
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.search-heading h2 span {
+  color: #2563eb;
+}
+
+.search-heading p {
+  max-width: 350px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SEARCH CARD
+========================= */
+
+.doctor-search-card {
+  display: flex;
+  align-items: flex-end;
+
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================
+   FIELD
+========================= */
+
+.search-field {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 4px 16px;
+}
+
+.search-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #475569;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.select-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.field-icon {
+  position: absolute;
+  left: 0;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+
+  pointer-events: none;
+}
+
+.search-field select,
+.search-field input {
+  width: 100%;
+
+  padding: 4px 24px 4px 24px;
+
+  color: #0f172a;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  appearance: none;
+}
+
+.search-field select {
+  cursor: pointer;
+}
+
+.search-field select:disabled {
+  color: #94a3b8;
+
+  cursor: not-allowed;
+}
+
+.search-field input {
+  padding-left: 24px;
+
+  color: #475569;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 2px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  pointer-events: none;
+}
+
+.field-divider {
+  width: 1px;
+  height: 42px;
+
+  background: #e2e8f0;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.search-doctor-btn {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  min-height: 48px;
+
+  padding: 0 20px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.search-doctor-btn span {
+  font-size: 16px;
+
+  transition: transform 0.2s ease;
+}
+
+.search-doctor-btn:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 8px 18px rgba(37, 99, 235, 0.2);
+}
+
+.search-doctor-btn:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.search-info {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-top: 22px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 550;
+}
+
+.info-check {
+  width: 17px;
+  height: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #16a34a;
+
+  background: #f0fdf4;
+
+  border-radius: 50%;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+  .search-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doctor-search-card {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 10px;
+  }
+
+  .search-field {
+    padding: 10px 12px;
+  }
+
+  .field-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .search-doctor-btn {
+    justify-content: center;
+
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .doctor-search-section {
+    padding: 70px 0;
+  }
+
+  .doctor-search-container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .search-heading h2 {
+    font-size: 30px;
+  }
+
+  .search-info {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+}

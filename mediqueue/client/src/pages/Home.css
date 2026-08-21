@@ -1,0 +1,644 @@
+.home {
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(37, 99, 235, 0.08),
+      transparent 32%
+    ),
+    #f8fafc;
+}
+
+.hero-container {
+  width: min(100% - 48px, 1280px);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 80px 0;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 7px 12px;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+  border-radius: 100px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+}
+
+.hero h1 {
+  max-width: 650px;
+
+  margin-top: 24px;
+
+  color: #0f172a;
+
+  font-size: clamp(48px, 5vw, 70px);
+
+  line-height: 1.04;
+
+  letter-spacing: -3px;
+
+  font-weight: 750;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero-description {
+  max-width: 570px;
+
+  margin-top: 24px;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.primary-hero-btn,
+.secondary-hero-btn {
+  padding: 13px 19px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 650;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.primary-hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: 1px solid #2563eb;
+
+  box-shadow:
+    0 6px 16px rgba(37, 99, 235, 0.2);
+}
+
+.primary-hero-btn span {
+  font-size: 17px;
+}
+
+.primary-hero-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 22px rgba(37, 99, 235, 0.25);
+}
+
+.secondary-hero-btn {
+  color: #334155;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+}
+
+.secondary-hero-btn:hover {
+  background: #f8fafc;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TRUST STATS
+========================= */
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 55px;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-item strong {
+  color: #0f172a;
+
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.trust-item span {
+  margin-top: 2px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 32px;
+
+  background: #e2e8f0;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-glow {
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  background: #dbeafe;
+
+  border-radius: 50%;
+
+  filter: blur(40px);
+
+  opacity: 0.65;
+}
+
+
+/* =========================
+   DOCTOR CARD
+========================= */
+
+.hospital-card {
+  position: relative;
+  z-index: 2;
+
+  width: 410px;
+
+  padding: 26px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid rgba(226, 232, 240, 0.9);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.12);
+}
+
+.hospital-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-label {
+  color: #94a3b8;
+
+  font-size: 9px;
+  font-weight: 750;
+
+  letter-spacing: 1px;
+}
+
+.hospital-card h3 {
+  margin-top: 5px;
+
+  color: #0f172a;
+
+  font-size: 20px;
+}
+
+.available-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 8px;
+
+  color: #15803d;
+
+  background: #f0fdf4;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.available-badge span {
+  width: 6px;
+  height: 6px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   DOCTOR PREVIEW
+========================= */
+
+.doctor-preview {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 25px;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.doctor-avatar {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background: #dbeafe;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.doctor-info h4 {
+  color: #0f172a;
+
+  font-size: 14px;
+}
+
+.doctor-info p {
+  margin-top: 2px;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.doctor-rating {
+  margin-top: 5px;
+
+  color: #475569;
+
+  font-size: 10px;
+}
+
+.doctor-rating span {
+  color: #f59e0b;
+}
+
+.doctor-rating small {
+  color: #94a3b8;
+}
+
+
+/* =========================
+   AVAILABILITY
+========================= */
+
+.availability {
+  margin-top: 20px;
+}
+
+.availability-header {
+  display: flex;
+  justify-content: space-between;
+
+  color: #475569;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.slots-count {
+  color: #2563eb;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-top: 11px;
+}
+
+.time-slots button {
+  padding: 9px 5px;
+
+  color: #475569;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.time-slots button:hover {
+  border-color: #93c5fd;
+
+  color: #2563eb;
+}
+
+.time-slots button.selected {
+  color: white;
+
+  background: #2563eb;
+
+  border-color: #2563eb;
+}
+
+
+/* =========================
+   BOOK BUTTON
+========================= */
+
+.card-book-btn {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 22px;
+
+  padding: 12px;
+
+  color: white;
+
+  background: #0f172a;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+  font-weight: 650;
+
+  transition: 0.2s ease;
+}
+
+.card-book-btn:hover {
+  background: #1e293b;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   QUEUE CARD
+========================= */
+
+.queue-floating-card {
+  position: absolute;
+
+  z-index: 3;
+
+  right: -20px;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 13px 15px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.12);
+}
+
+.queue-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border-radius: 8px;
+
+  font-weight: 750;
+}
+
+.queue-floating-card > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-floating-card span:first-child {
+  color: #94a3b8;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+}
+
+.queue-floating-card strong {
+  color: #0f172a;
+
+  font-size: 14px;
+}
+
+.queue-status {
+  padding-left: 11px;
+
+  border-left: 1px solid #e2e8f0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-status small {
+  color: #64748b;
+
+  font-size: 8px;
+}
+
+.queue-status span {
+  margin-top: 1px;
+
+  color: #16a34a;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-visual {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    width: min(100% - 32px, 1280px);
+
+    padding: 55px 0;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-hero-btn,
+  .secondary-hero-btn {
+    justify-content: center;
+  }
+
+  .hero-trust {
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .hospital-card {
+    width: 100%;
+    max-width: 410px;
+    padding: 20px;
+  }
+
+  .queue-floating-card {
+    right: 0;
+    bottom: 25px;
+  }
+}

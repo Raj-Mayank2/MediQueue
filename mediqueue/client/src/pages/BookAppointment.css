@@ -1,0 +1,524 @@
+.booking-page {
+  min-height: 100vh;
+
+  padding: 50px 0 100px;
+
+  background: #f8fafc;
+}
+
+.booking-container {
+  width: min(100% - 48px, 1100px);
+
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.booking-header {
+  max-width: 650px;
+
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  color: #64748b;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: #2563eb;
+}
+
+.booking-header h1 {
+  margin-top: 9px;
+
+  color: #0f172a;
+
+  font-size: 42px;
+
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+}
+
+.booking-header h1 span {
+  color: #2563eb;
+}
+
+.booking-header p {
+  margin-top: 13px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* LAYOUT */
+
+.booking-layout {
+  display: grid;
+
+  grid-template-columns: 1.35fr 0.65fr;
+
+  gap: 18px;
+
+  align-items: start;
+}
+
+
+/* FORM */
+
+.patient-form {
+  padding: 28px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+}
+
+.form-section-heading {
+  display: flex;
+
+  gap: 14px;
+
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.form-section-heading > span {
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.form-section-heading h2 {
+  color: #0f172a;
+
+  font-size: 16px;
+}
+
+.form-section-heading p {
+  margin-top: 3px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+
+/* FORM GRID */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+
+  margin-top: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 7px;
+
+  color: #475569;
+
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.form-group label span {
+  color: #94a3b8;
+
+  font-size: 8px;
+
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  color: #0f172a;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 10px;
+
+  resize: vertical;
+
+  transition: 0.2s ease;
+}
+
+.form-group input {
+  height: 42px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background: white;
+
+  border-color: #93c5fd;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.06);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #cbd5e1;
+}
+
+
+/* NOTICE */
+
+.form-notice {
+  display: flex;
+
+  gap: 9px;
+
+  margin-top: 22px;
+
+  padding: 12px;
+
+  background: #eff6ff;
+
+  border-radius: 8px;
+}
+
+.form-notice > span {
+  color: #2563eb;
+
+  font-size: 12px;
+}
+
+.form-notice p {
+  color: #64748b;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+
+/* CONFIRM */
+
+.confirm-booking-btn {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 20px;
+
+  padding: 13px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.confirm-booking-btn span {
+  font-size: 15px;
+}
+
+.confirm-booking-btn:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 7px 18px rgba(37, 99, 235, 0.2);
+}
+
+
+/* SUMMARY */
+
+.appointment-summary {
+  position: sticky;
+
+  top: 100px;
+
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.summary-header span {
+  color: #94a3b8;
+
+  font-size: 8px;
+
+  letter-spacing: 0.8px;
+
+  font-weight: 750;
+}
+
+.summary-header strong {
+  color: #2563eb;
+
+  font-size: 9px;
+}
+
+
+/* DOCTOR */
+
+.summary-doctor {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.summary-avatar {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.summary-doctor h3 {
+  color: #0f172a;
+
+  font-size: 12px;
+}
+
+.summary-doctor p {
+  margin-top: 2px;
+
+  color: #2563eb;
+
+  font-size: 9px;
+}
+
+
+/* DETAILS */
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  padding: 18px 0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.summary-item span {
+  color: #94a3b8;
+
+  font-size: 8px;
+
+  font-weight: 650;
+}
+
+.summary-item strong {
+  color: #475569;
+
+  font-size: 9px;
+
+  text-align: right;
+}
+
+
+/* TOTAL */
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 16px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+.summary-total span {
+  color: #475569;
+
+  font-size: 10px;
+}
+
+.summary-total strong {
+  color: #0f172a;
+
+  font-size: 17px;
+}
+
+
+/* TICKET NOTE */
+
+.summary-ticket-note {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  padding: 11px;
+
+  background: #f8fafc;
+
+  border-radius: 8px;
+}
+
+.summary-ticket-note span {
+  font-size: 12px;
+}
+
+.summary-ticket-note p {
+  color: #64748b;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+}
+
+
+/* ERROR */
+
+.booking-error {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.booking-error h1 {
+  color: #0f172a;
+
+  font-size: 25px;
+}
+
+.booking-error p {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.booking-error a {
+  color: #2563eb;
+
+  font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .booking-header h1 {
+    font-size: 34px;
+  }
+
+  .patient-form {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+}

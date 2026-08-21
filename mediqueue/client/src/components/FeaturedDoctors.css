@@ -1,0 +1,316 @@
+.featured-doctors {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.featured-doctors-container {
+  width: min(100% - 48px, 1100px);
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.doctors-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+  margin-bottom: 36px;
+}
+
+.doctors-heading h2 {
+  margin-top: 8px;
+
+  color: #0f172a;
+
+  font-size: 38px;
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.doctors-heading h2 span {
+  color: #2563eb;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.doctors-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.doctor-card {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+    0 18px 35px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.doctor-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.doctor-large-avatar {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background:
+    linear-gradient(
+      145deg,
+      #dbeafe,
+      #eff6ff
+    );
+
+  border-radius: 15px;
+
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.doctor-rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 6px 9px;
+
+  color: #475569;
+
+  background: #fffbeb;
+
+  border: 1px solid #fef3c7;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.doctor-rating-badge span {
+  color: #f59e0b;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.doctor-card-info {
+  margin-top: 18px;
+}
+
+.doctor-card-info h3 {
+  color: #0f172a;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.doctor-specialty {
+  margin-top: 3px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.doctor-meta {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 8px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+.meta-dot {
+  color: #cbd5e1;
+}
+
+
+/* =========================
+   AVAILABILITY
+========================= */
+
+.doctor-availability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  padding: 13px;
+
+  background: #f8fafc;
+
+  border-radius: 9px;
+}
+
+.doctor-availability > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.availability-label {
+  color: #16a34a;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.doctor-availability strong {
+  margin-top: 3px;
+
+  color: #475569;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.doctor-fee {
+  color: #0f172a;
+
+  font-size: 15px;
+  font-weight: 750;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.doctor-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+  margin-top: 13px;
+}
+
+.profile-btn,
+.book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 650;
+
+  transition: 0.2s ease;
+}
+
+.profile-btn {
+  color: #475569;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+}
+
+.profile-btn:hover {
+  color: #2563eb;
+
+  border-color: #bfdbfe;
+
+  background: #eff6ff;
+}
+
+.book-btn {
+  color: white;
+
+  background: #2563eb;
+
+  border: 1px solid #2563eb;
+}
+
+.book-btn:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .featured-doctors {
+    padding: 70px 0;
+  }
+
+  .featured-doctors-container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .doctors-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .doctors-heading h2 {
+    font-size: 30px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+}

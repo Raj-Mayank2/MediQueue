@@ -1,0 +1,520 @@
+.how-it-works {
+  padding: 110px 0;
+
+  background: #f8fafc;
+}
+
+.how-container {
+  width: min(100% - 48px, 1100px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.how-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 50px;
+}
+
+.how-heading h2 {
+  margin-top: 8px;
+
+  color: #0f172a;
+
+  font-size: 38px;
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.how-heading h2 span {
+  color: #2563eb;
+}
+
+.how-heading > p {
+  max-width: 360px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 14px;
+
+  margin-bottom: 70px;
+}
+
+.step-card {
+  position: relative;
+
+  padding: 24px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+
+  min-height: 190px;
+}
+
+.step-number {
+  display: inline-flex;
+
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 0.5px;
+}
+
+.step-line {
+  width: 25px;
+  height: 2px;
+
+  margin-top: 17px;
+
+  background: #dbeafe;
+}
+
+.step-card h3 {
+  margin-top: 18px;
+
+  color: #0f172a;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.step-card p {
+  margin-top: 7px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   QUEUE SECTION
+========================= */
+
+.queue-section {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+
+  align-items: center;
+
+  padding: 55px;
+
+  background: #0f172a;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.queue-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  top: -180px;
+  right: -100px;
+
+  background: #2563eb;
+
+  border-radius: 50%;
+
+  opacity: 0.12;
+
+  filter: blur(20px);
+}
+
+
+/* =========================
+   QUEUE CONTENT
+========================= */
+
+.queue-content {
+  position: relative;
+  z-index: 2;
+}
+
+.queue-content .section-label {
+  color: #60a5fa;
+}
+
+.queue-content h2 {
+  margin-top: 10px;
+
+  color: white;
+
+  font-size: 38px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.queue-content h2 span {
+  color: #60a5fa;
+}
+
+.queue-content p {
+  max-width: 400px;
+
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+.queue-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 27px;
+
+  padding: 11px 16px;
+
+  color: #0f172a;
+
+  background: white;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.queue-cta span {
+  font-size: 16px;
+
+  transition: transform 0.2s ease;
+}
+
+.queue-cta:hover {
+  background: #eff6ff;
+
+  transform: translateY(-2px);
+}
+
+.queue-cta:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   QUEUE DASHBOARD
+========================= */
+
+.queue-dashboard {
+  position: relative;
+  z-index: 2;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.queue-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.queue-dashboard-header > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-dashboard-header span:first-child {
+  color: #94a3b8;
+
+  font-size: 8px;
+  font-weight: 750;
+
+  letter-spacing: 1px;
+}
+
+.queue-dashboard-header strong {
+  margin-top: 5px;
+
+  color: #0f172a;
+
+  font-size: 12px;
+}
+
+.queue-live {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 5px 8px;
+
+  color: #15803d;
+
+  background: #f0fdf4;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.queue-live span {
+  width: 5px;
+  height: 5px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   QUEUE MAIN
+========================= */
+
+.queue-main {
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 25px 5px;
+}
+
+.current-patient,
+.your-patient {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-patient span,
+.your-patient > span {
+  color: #94a3b8;
+
+  font-size: 8px;
+  font-weight: 750;
+
+  letter-spacing: 0.7px;
+}
+
+.current-patient strong {
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 29px;
+
+  letter-spacing: -1px;
+}
+
+.current-patient small {
+  margin-top: 2px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+.your-patient strong {
+  margin-top: 5px;
+
+  color: #2563eb;
+
+  font-size: 29px;
+
+  letter-spacing: -1px;
+}
+
+.queue-divider {
+  width: 1px;
+  height: 70px;
+
+  background: #e2e8f0;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.queue-progress {
+  margin-top: 10px;
+}
+
+.progress-track {
+  width: 100%;
+  height: 5px;
+
+  background: #e2e8f0;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 70%;
+  height: 100%;
+
+  background: #2563eb;
+
+  border-radius: inherit;
+}
+
+.queue-progress span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 8px;
+}
+
+
+/* =========================
+   ESTIMATE
+========================= */
+
+.queue-estimate {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.queue-estimate > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-estimate span {
+  color: #94a3b8;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.queue-estimate strong {
+  margin-top: 4px;
+
+  color: #0f172a;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .queue-section {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-it-works {
+    padding: 75px 0;
+  }
+
+  .how-container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .how-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .how-heading h2,
+  .queue-content h2 {
+    font-size: 30px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .queue-section {
+    padding: 28px 20px;
+  }
+
+  .queue-main {
+    gap: 12px;
+  }
+
+  .current-patient strong,
+  .your-patient strong {
+    font-size: 24px;
+  }
+}

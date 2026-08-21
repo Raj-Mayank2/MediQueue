@@ -1,0 +1,252 @@
+.booking-cta {
+  padding: 0 0 100px;
+
+  background: #ffffff;
+}
+
+.booking-cta-container {
+  position: relative;
+
+  width: min(100% - 48px, 1100px);
+
+  min-height: 300px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  padding: 55px;
+
+  background: #2563eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 600px;
+}
+
+.cta-content .section-label {
+  color: #bfdbfe;
+}
+
+.cta-content h2 {
+  margin-top: 10px;
+
+  color: white;
+
+  font-size: 36px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.cta-content h2 span {
+  color: #dbeafe;
+}
+
+.cta-content p {
+  max-width: 500px;
+
+  margin-top: 15px;
+
+  color: #dbeafe;
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.cta-actions {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.cta-primary,
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 16px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.cta-primary {
+  color: #2563eb;
+
+  background: white;
+}
+
+.cta-primary span {
+  font-size: 15px;
+
+  transition: transform 0.2s ease;
+}
+
+.cta-primary:hover {
+  background: #eff6ff;
+
+  transform: translateY(-2px);
+}
+
+.cta-primary:hover span {
+  transform: translateX(3px);
+}
+
+.cta-secondary {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================
+   DECORATION
+========================= */
+
+.cta-decoration {
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -80px;
+  top: -50px;
+}
+
+.cta-circle {
+  position: absolute;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 350px;
+  height: 350px;
+
+  right: 0;
+  top: 0;
+}
+
+.circle-two {
+  width: 230px;
+  height: 230px;
+
+  right: 60px;
+  top: 60px;
+}
+
+.cta-card {
+  position: absolute;
+
+  top: 135px;
+  right: 105px;
+
+  width: 130px;
+
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+}
+
+.cta-card span {
+  font-size: 7px;
+
+  letter-spacing: 1px;
+
+  color: #bfdbfe;
+}
+
+.cta-card strong {
+  margin-top: 8px;
+
+  font-size: 27px;
+}
+
+.cta-card small {
+  margin-top: 3px;
+
+  color: #dbeafe;
+
+  font-size: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .booking-cta {
+    padding-bottom: 70px;
+  }
+
+  .booking-cta-container {
+    width: min(100% - 32px, 1100px);
+
+    padding: 35px 25px;
+  }
+
+  .cta-content h2 {
+    font-size: 30px;
+  }
+
+  .cta-decoration {
+    opacity: 0.3;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
